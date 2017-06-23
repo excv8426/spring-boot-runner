@@ -20,8 +20,6 @@ public class SpringBootRunner {
 	static ApplicationContext applicationContext;
     public static void main( String[] args ) {
     	applicationContext = SpringApplication.run(SpringBootRunner.class, args);
-    	
-    	
         System.out.println( "Hello World!" );
     }
 }
