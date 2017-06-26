@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@EnableJpaRepositories("repository")
 //@EntityScan("model")
 @RestController
+@ComponentScan(basePackages={"javasrc"})
 public class SpringBootRunner {	
 	static ApplicationContext applicationContext;
     public static void main( String[] args ) {
